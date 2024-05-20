@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('título');
             $table->text('descripción');
             $table->string('categoría');
-            $table->decimal('precio', 10, 2);
+            $table->integer('precio');
             $table->string('ubicación');
             $table->timestamp('fecha_publicación')->nullable();
             $table->boolean('activo')->default(true);
